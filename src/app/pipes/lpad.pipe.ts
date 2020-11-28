@@ -10,6 +10,10 @@ export class LpadPipe implements PipeTransform {
       return 'Inválido';
     }
 
+    if(lpad.length > numberOfLPads) {
+      return lpad;
+    }
+
     let numberOfChars: number = lpad.length;
     let stringToReturn: string = '';
 

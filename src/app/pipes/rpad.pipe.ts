@@ -10,6 +10,10 @@ export class RpadPipe implements PipeTransform {
       return 'Inválido';
     }
 
+    if(rpad.length > numberOfRPads) {
+      return rpad;
+    }
+
     let numberOfChars: number = rpad.length;
     let stringToReturn: string = '';
 
